@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student q</title>
+</head>
+<body>
+    <form method="post" action="/students-q/{{students.id}}/">{% csrf_token %}
+        <input type="text" name="ismi" placeholder="Student ismi">
+        <input type="number" name="y" placeholder="Student yoshi">
+        <input type="number" name="n_k" placeholder="Nechinchi kurs">
+        <input type="number" name="s_t" placeholder="Student raqami">
+        <button type="submit">Qo'shish</button>
+    </form>
+    <br>
+</body>
+</html>
